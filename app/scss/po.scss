@@ -1,0 +1,234 @@
+.po{
+    width: 100%;
+    padding: 50px 0px 48px 0px;
+    &__body{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        &-title{
+            font-size: 66px;
+            font-weight: 600;
+            line-height: 80.45px;
+            text-align: left;
+            color: #050C13;
+            text-transform: uppercase;
+        }
+        &-nav{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            &-back{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                svg{
+                    width: 14px;
+                    height: 9px;
+                }
+                span{
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17.07px;
+                    text-align: left;
+                    color: #969FA8;
+                }
+            }
+            p{
+                color: #969FA8;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17.07px;
+                text-align: left;
+            }
+            &-main{
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 17.07px;
+                text-align: left;
+                color: #969FA8;
+                text-decoration: underline;
+            }
+        }
+        &-card{
+            width: 100%;
+            padding: 36px 39px 38px 38px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            background: #fff;
+            box-shadow: 0px 4px 20px 0px #E3E5EB;
+            border-radius: 20px;
+            &-choose{
+                display: flex;
+                align-items: center;
+                gap: 36px;
+                &-item{
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 29.26px;
+                    text-align: left;
+                    color: #050C1359;
+                    transition: all 0.5s ease;
+                    cursor: pointer;
+                }
+                &-item.active{
+                    color: #050C13;
+                    text-decoration: underline;
+                }
+            }
+            p{
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 26px;
+                text-align: left;
+                color: #466BA9;
+            }
+            &-form{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                align-items: center;
+                &-inp{
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    width: 100%;
+                    &-start{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 24px;
+                        align-items: center;
+                        .input__wrap-text{
+                            width: 614px;
+                            height: 45px;
+                            border: 1px solid #E0E0E0;
+                            background: #F2F2F2;
+                            border-radius: 8px;
+                            padding-left: 18px;
+                            display: flex;
+                            align-items: center;
+                            padding-right: 18px;
+                            svg{
+                                width: 17px;
+                                height: 17px;
+                            }
+                        }
+                        input{
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 18.2px;
+                            text-align: left;
+                            color: #050C13;
+                            width: 100%;
+                            background: transparent;
+                        }
+                        .input__wrap-text:focus{
+                            border: 1px solid #6E91CB !important;
+                        }
+                        .input__wrap-text.ok{
+                            border: 1px solid #6E91CB;
+                        }
+                        .input__wrap-text.error{
+                            border: 1px solid #C01817 ;
+                        }
+                    }
+                    &-end{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 24px;
+                        align-items: center;
+                        .input__wrap-text{
+                            width: 614px;
+                            height: 45px;
+                            border: 1px solid #E0E0E0;
+                            background: #F2F2F2;
+                            border-radius: 8px;
+                            padding-left: 18px;
+                            display: flex;
+                            align-items: center;
+                            padding-right: 18px;
+                        }
+                        input{
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 18.2px;
+                            text-align: left;
+                            color: #050C13;
+                            width: 100%;
+                            background: transparent;
+                        }
+                        .input__wrap-text:focus{
+                            border: 1px solid #6E91CB !important;
+                        }
+                        .input__wrap-text.ok{
+                            border: 1px solid #6E91CB;
+                        }
+                        .input__wrap-text.error{
+                            border: 1px solid #C01817 ;
+                        }
+                        select{
+                            width: 614px;
+                            height: 45px;
+                            border: 1px solid #E0E0E0;
+                            background: #F2F2F2 url(../images/dist/select__svg.png) right no-repeat;
+                            border-radius: 8px;
+                            background-position: 98%;
+                            padding-left: 18px;
+                            display: flex;
+                            align-items: center;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            -o-appearance: none;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 18.2px;
+                            text-align: left;
+                            color: #818181;
+                            option{
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 18.2px;
+                                text-align: left;
+                                color: #818181;
+                            }
+                            option::selection {background: #ccc;}
+                            option::-moz-selection {background: #ccc;}
+                            option::-webkit-selection {background: #ccc; color:#fff;}
+                        }
+                        select::-ms-expand {
+                            display: none;
+                        }
+                        .select.choose{
+                            color: #050C13;
+                        }
+                        .select.error{
+                            border-color: #C01817;
+                        }
+                        .select:focus{
+                            border: 1px solid #6E91CB !important;
+                        }
+                        .select.ok{
+                            border: 1px solid #6E91CB !important;
+                        }
+                    }
+                    }
+                    &-btn{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 54px;
+                    background: #37414C;
+                    border-radius: 10px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 21.94px;
+                    text-align: left;
+                    color: #FFFFFF;
+                }
+                }
+                
+            }
+        }
+    }

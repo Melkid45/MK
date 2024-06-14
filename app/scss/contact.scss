@@ -1,0 +1,73 @@
+.contact{
+    width: 100%;
+    position: relative;
+    padding-bottom: 56px;
+    &__back{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        gap: 61px;
+        &-text{
+            margin-top: 95px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            &-title{
+                font-size: 66px;
+                font-weight: 600;
+                line-height: 80.45px;
+                text-align: left;
+                color: #fff;
+            }
+            &-nav{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                .footer__body-top-item-contact{
+                    gap: 24px;
+                    max-width: max-content;
+                    a{
+                        svg{
+                            path{
+                                fill: #fff;
+                            }
+                        }
+                        span{
+                            color: #fff;
+                        }
+                    }
+                }
+                .footer__body-top-item-address{
+                    max-width: max-content;
+                    svg{
+                        path{
+                            fill: #fff;
+                        }
+                    }
+                    span{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        &-card{
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            img{
+                width: 662px;
+                height: 340px;
+            }
+            iframe{
+                width: 662px;
+                height: 340px;
+                border-radius: 20px;
+            }
+        }
+    }
+}

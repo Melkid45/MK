@@ -1,0 +1,35 @@
+.hover__two{
+    transition: all 0.5s ease;
+    span{
+        transition: all 0.5s ease;
+    }
+    svg{
+        path{
+            transition: all 0.5s ease;
+        }
+        transition: all 0.5s ease;
+    }
+}
+.hover__two:hover{
+    background: #5E7AA7 !important;
+    span{
+        color: #fff !important;
+    }
+    svg{
+        path{
+            fill: #fff !important;
+        }
+    }
+}
+.hover__one{
+    transition: all 0.5s ease;
+    span{
+        transition: all 0.5s ease;
+    }
+}
+.hover__one:hover{
+    background: #6E91CB !important;
+    span{
+        color: #fff !important;
+    }
+}

@@ -1,0 +1,87 @@
+.question{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: url(../images/dist/que__back.png) center no-repeat;
+    background-size: cover;
+    padding-top: 95px;
+    padding-bottom: 121px;
+    &__body{
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+        &-title{
+            font-size: 66px;
+            font-weight: 600;
+            line-height: 80.45px;
+            text-align: left;
+            color: #050C13;
+        }
+        &-card{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            &-item{
+                width: 430px;
+                padding: 14px 16px 21px 23px;
+                display: flex;
+                flex-direction: column;
+                height: 156px;
+                justify-content: space-between;
+                align-items: center;
+                background: #fff;
+                border-radius: 20px;
+                &-title{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    span{
+                        font-size: 22px;
+                        font-weight: 500;
+                        line-height: 26.82px;
+                        text-align: left;
+                        color: #1D2023;
+                        text-transform: uppercase;
+                    }
+                }
+                &-btn{
+                    width: 100%;
+                    background: #5E7AA721;
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                    border-radius: 10px;
+                    justify-content: space-between;
+                    span{
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 19.5px;
+                        text-align: left;
+                        color: #0F1A32;
+                    }
+                    svg{
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+            &-item:nth-child(1){
+                .question__body-card-item-title{
+                    img{
+                        width: 44.14px;
+                        height: 73px;
+                    }
+                }
+            }
+            &-item:nth-child(2){
+                .question__body-card-item-title{
+                    img{
+                        width: 84px;
+                        height: 59px;
+                    }
+                }
+            }
+        }
+    }
+}
