@@ -116,3 +116,30 @@ $('.trash').on('click' , function(e){
 $('select').on('change', function(e){
     $(this).addClass('choose')
 })
+
+
+
+
+
+
+
+
+
+
+
+
+var splide = new Splide( '#splide', {
+    type   : 'loop',
+    pagination: true,
+    arrows: false,
+    } );
+
+splide.mount();
+var splide = new Splide( '#splide__news', {
+    type   : 'loop',
+    pagination: false,
+    gap: '24px',
+    arrows: true,
+    } );
+
+splide.mount();

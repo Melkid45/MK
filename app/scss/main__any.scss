@@ -1,0 +1,145 @@
+.main__any{
+    width: 100%;
+    margin-top: 70px;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    &-title{
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 36.57px;
+        text-align: left;
+        color: #050C13;
+    }
+    &-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 38px;
+        &-start{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            &-item{
+                background: transparent;
+                position: relative;
+                width: 318px;
+                height: 155px;
+                border-radius: 20px;
+                padding: 28px 30px 27px 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .prof__back{
+                    position: absolute;
+                    width: 350px;
+                    top: -14px;
+                    right: -12px;
+                    height: 190px;
+                    z-index: -1;
+                }
+                &-title{
+                    display: flex;
+                    align-items: center;
+                    gap: 11px;
+                    svg{
+                        width: 28px;
+                        height: 28px;
+                    }
+                    span{
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 24.38px;
+                        text-align: left;
+                        color: #1D2023;
+                    }
+                }
+                &-btn{
+                    padding: 6px 6px 6px 18px;
+                    background: #FFEEEE99;
+                    border: 1px solid #FFE5E4;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    max-width: 260px;
+                    svg{
+                        width: 31px;
+                        height: 30px;
+                    }
+                    span{
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 19.5px;
+                        text-align: left;
+                        color: #1D2023;
+                    }
+                }
+            }
+        }
+        &-end{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            &-item{
+                width: 432px;
+                height: 155px;
+                position: relative;
+                border-radius: 20px;
+                padding: 28px 30px 27px 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .prof__back{
+                    position: absolute;
+                    z-index: -1;
+                    width: 465px;
+                    height: 190px;
+                    top: -14px;
+                    right: -11px;
+                }
+                &-title{
+                    display: flex;
+                    align-items: center;
+                    gap: 11px;
+                    svg{
+                        width: 28px;
+                        height: 28px;
+                    }
+                    span{
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 24.38px;
+                        text-align: left;
+                        color: #1D2023;
+                    }
+                }
+                &-btn{
+                    padding: 6px 6px 6px 18px;
+                    background: #FFEEEE99;
+                    border: 1px solid #FFE5E4;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    max-width: 260px;
+                    svg{
+                        width: 31px;
+                        height: 30px;
+                    }
+                    span{
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 19.5px;
+                        text-align: left;
+                        color: #1D2023;
+                    }
+                }
+            }
+        }
+    }
+}

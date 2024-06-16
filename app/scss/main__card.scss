@@ -1,0 +1,453 @@
+.main__card{
+    width: 100%;
+    padding-bottom: 82px;
+    padding-top: 50px;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+    }
+    &-title{
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 36.57px;
+        text-align: left;
+        color: #050C13;
+    }
+    &-body{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 26px;
+        align-items: center;
+        &-item{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 430px;
+            height: 195px;
+            box-shadow: 0px 4px 20px 0px #E3E5EB;
+            border-radius: 20px;
+            position: relative;
+            background: transparent;
+        }
+        &-item:nth-child(1){
+            background: #fff;
+            padding: 24px 13px 13px 24px;
+            .main__card-body-item-img{
+                width: 65px;
+                height: 94px;
+                top: 13px;
+                right: 14px;
+                position: absolute;
+                z-index: 1;               
+            }
+            .main__card-body-item-list{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                height: 160px;
+                overflow: auto;
+                z-index: 2;
+                width: 100%;
+                span{
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 26.82px;
+                    text-align: left;
+                    color: #1D2023;
+                    max-width: 329px;
+                }
+                ul{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 12px;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                        svg{
+                            width: 11px;
+                            height: 12px;
+                        }
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 19.5px;
+                        text-align: left;
+                        color: #37414C;
+                    }
+                }
+            }
+            .main__card-body-item-list::-webkit-scrollbar{
+                width: 12px;
+                background: #F6F6F6;
+                border-radius: 100px;
+                border-width: 0px 1px 0px 1px;
+                border-style: solid;
+                border-color: #5F6D8633;
+            }
+            .main__card-body-item-list::-webkit-scrollbar-thumb{
+                width: 6px;
+                height: 25px;
+                background: #6E91CB;
+                border-radius: 100px;
+            }
+        }
+        &-item:nth-child(2){
+            background: #fff;
+            padding: 24px 13px 13px 24px;
+            .main__card-body-item-img{
+                width: 468px;
+                height: 235px;
+                top: -15px;
+                right: -19px;
+                position: absolute;
+                z-index: 1;              
+            }
+            .main__card-body-item-list{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                height: 160px;
+                overflow: auto;
+                z-index: 2;
+                width: 100%;
+                span{
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 26.82px;
+                    text-align: left;
+                    color: #fff;
+                    max-width: 329px;
+                }
+                ul{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 12px;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                        svg{
+                            width: 11px;
+                            height: 12px;
+                        }
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 19.5px;
+                        text-align: left;
+                        color: #fff;
+                    }
+                }
+            }
+            .main__card-body-item-list::-webkit-scrollbar{
+                width: 12px;
+                background: #F6F6F6;
+                border-radius: 100px;
+                border-width: 0px 1px 0px 1px;
+                border-style: solid;
+                border-color: #5F6D8633;
+            }
+            .main__card-body-item-list::-webkit-scrollbar-thumb{
+                width: 6px;
+                height: 25px;
+                background: #DF6A6A;
+                border-radius: 100px;
+            }
+        }
+        &-item:nth-child(3){
+            background: #fff;
+            padding: 24px 13px 13px 24px;
+            .main__card-body-item-img{
+                width: 96.12px;
+                height: 97.07px;
+                top: 9px;
+                right: 14px;
+                position: absolute;
+                z-index: 1;               
+            }
+            .main__card-body-item-list{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                height: 140px;
+                overflow: auto;
+                z-index: 2;
+                width: 100%;
+                span{
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 26.82px;
+                    text-align: left;
+                    color: #1D2023;
+                    max-width: 329px;
+                }
+                ul{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 12px;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                        svg{
+                            width: 11px;
+                            height: 12px;
+                        }
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 19.5px;
+                        text-align: left;
+                        color: #37414C;
+                    }
+                }
+            }
+            .main__card-body-item-list::-webkit-scrollbar{
+                width: 12px;
+                background: #F6F6F6;
+                border-radius: 100px;
+                border-width: 0px 1px 0px 1px;
+                border-style: solid;
+                border-color: #5F6D8633;
+            }
+            .main__card-body-item-list::-webkit-scrollbar-thumb{
+                width: 6px;
+                height: 25px;
+                background: #6E91CB;
+                border-radius: 100px;
+            }
+        }
+        &-item:nth-child(4){
+            background: #fff;
+            padding: 24px 13px 13px 24px;
+            .main__card-body-item-img{
+                width: 76px;
+                height: 74px;
+                top: 17px;
+                right: 14px;
+                position: absolute;
+                z-index: 1;               
+            }
+            .main__card-body-item-list{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                height: 140px;
+                overflow: auto;
+                z-index: 2;
+                width: 100%;
+                span{
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 26.82px;
+                    text-align: left;
+                    color: #1D2023;
+                    max-width: 329px;
+                }
+                ul{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 12px;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                        svg{
+                            width: 11px;
+                            height: 12px;
+                        }
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 19.5px;
+                        text-align: left;
+                        color: #37414C;
+                    }
+                }
+            }
+            .main__card-body-item-list::-webkit-scrollbar{
+                width: 12px;
+                background: #F6F6F6;
+                border-radius: 100px;
+                border-width: 0px 1px 0px 1px;
+                border-style: solid;
+                border-color: #5F6D8633;
+            }
+            .main__card-body-item-list::-webkit-scrollbar-thumb{
+                width: 6px;
+                height: 25px;
+                background: #6E91CB;
+                border-radius: 100px;
+            }
+        }
+        &-item:nth-child(5){
+            background: #fff;
+            padding: 24px 13px 13px 24px;
+            .main__card-body-item-img{
+                width: 52px;
+                height: 86px;
+                top: 12px;
+                right: 14px;
+                position: absolute;
+                z-index: 1;               
+            }
+            .main__card-body-item-list{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                height: 110px;
+                overflow: auto;
+                z-index: 2;
+                width: 100%;
+                span{
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 26.82px;
+                    text-align: left;
+                    color: #1D2023;
+                    max-width: 355px;
+                }
+                ul{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 12px;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                        svg{
+                            width: 11px;
+                            height: 12px;
+                        }
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 19.5px;
+                        text-align: left;
+                        color: #37414C;
+                    }
+                }
+            }
+            .main__card-body-item-btn{
+                width: 100%;
+                background: #5E7AA721;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border-radius: 10px;
+                justify-content: space-between;
+                span{
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 19.5px;
+                    text-align: left;
+                    color: #0F1A32;
+                }
+                svg{
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            .main__card-body-item-list::-webkit-scrollbar{
+                width: 12px;
+                background: #F6F6F6;
+                border-radius: 100px;
+                border-width: 0px 1px 0px 1px;
+                border-style: solid;
+                border-color: #5F6D8633;
+            }
+            .main__card-body-item-list::-webkit-scrollbar-thumb{
+                width: 6px;
+                height: 25px;
+                background: #6E91CB;
+                border-radius: 100px;
+            }
+        }
+        &-item:nth-child(6){
+            background: #fff;
+            padding: 24px 13px 13px 24px;
+            .main__card-body-item-img{
+                width: 84px;
+                height: 59px;
+                top: 12px;
+                right: 14px;
+                position: absolute;
+                z-index: 1;               
+            }
+            .main__card-body-item-list{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                height: 110px;
+                overflow: auto;
+                z-index: 2;
+                width: 100%;
+                padding-bottom: 10px;
+                span{
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 26.82px;
+                    text-align: left;
+                    color: #1D2023;
+                    max-width: 355px;
+                }
+                ul{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 12px;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                        svg{
+                            width: 11px;
+                            height: 12px;
+                        }
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 19.5px;
+                        text-align: left;
+                        color: #37414C;
+                    }
+                }
+            }
+            .main__card-body-item-btn{
+                width: 100%;
+                background: #5E7AA721;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border-radius: 10px;
+                justify-content: space-between;
+                span{
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 19.5px;
+                    text-align: left;
+                    color: #0F1A32;
+                }
+                svg{
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            .main__card-body-item-list::-webkit-scrollbar{
+                width: 12px;
+                background: #F6F6F6;
+                border-radius: 100px;
+                border-width: 0px 1px 0px 1px;
+                border-style: solid;
+                border-color: #5F6D8633;
+            }
+            .main__card-body-item-list::-webkit-scrollbar-thumb{
+                width: 6px;
+                height: 25px;
+                background: #6E91CB;
+                border-radius: 100px;
+            }
+        }
+    }
+}

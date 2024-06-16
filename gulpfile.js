@@ -99,8 +99,6 @@ function building(){
     return src([
         'app/scss/style.min.css',
         'app/images/dist/*.*',
-        '!app/images/dist/*.svg',
-        'app/images/dist/sprite.svg',
         'app/fonts/*.*',
         'app/js/main.min.js',
         'app/index.html'
@@ -115,5 +113,5 @@ exports.pages = pages;
 exports.sprite = sprite;
 exports.watching = watching;
 exports.building = building;
-exports.build = series(cleanDist, building);
+exports.build = series( building);
 exports.default = parallel(styles, images, scripts, pages, watching);
