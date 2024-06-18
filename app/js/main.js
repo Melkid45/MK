@@ -119,7 +119,17 @@ $('select').on('change', function(e){
 
 
 
-
+$('.burger').on('click', function(e){
+    if ($('.header__mobile').hasClass('active')){
+        $('.header__mobile').removeClass('active')
+        $('body').removeClass('hidden')
+        $(this).removeClass('active')
+    }else{
+        $('.header__mobile').addClass('active')
+        $('body').addClass('hidden')
+        $(this).addClass('active')
+    }
+})
 
 
 

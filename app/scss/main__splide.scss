@@ -4,11 +4,18 @@
     .splide__slide{
         width: 100%;
         padding: 95px 0px 154px 49px;
-        background: url(../images/dist/main__splide1.png) center no-repeat;
-        background-size: cover;
+        position: relative;
         display: flex;
         flex-direction: column;
         gap: 16px;
+        img{
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
         h1{
             font-size: 66px;
             font-weight: 600;

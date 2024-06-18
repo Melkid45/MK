@@ -2,10 +2,16 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background: url(../images/dist/que__back.png) center no-repeat;
-    background-size: cover;
     padding-top: 95px;
     padding-bottom: 121px;
+    position: relative;
+    &__back{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
     &__body{
         display: flex;
         flex-direction: column;

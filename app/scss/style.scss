@@ -30,3 +30,9 @@ body{
 .hidden{
     overflow: hidden;
 }
+.desktop{
+    display: flex !important;
+}
+.mobile{
+    display: none !important;
+}
