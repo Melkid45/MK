@@ -131,11 +131,111 @@ $('.burger').on('click', function(e){
     }
 })
 
+function Form(){
+    $('.text').each(function(e){
+        if ($(this).val().length == 0){
+            $(this).parent('div').children('.ok').addClass('none')
+            $(this).parent('div').addClass('error')
+            $(this).next('.err').removeClass('none')
+            $(this).parent('div').removeClass('ok')
+        }else{
+            $(this).next('.err').addClass('none')
+            $(this).parent('div').children('.ok').removeClass('none')
+            $(this).parent('div').removeClass('error')
+            $(this).parent('div').addClass('ok')
+        }
+    })
+}
+$('.call__btn').on('click', function(e){
+    $('.call').addClass('active')
+    $('body').addClass('hidden')
+})
+$('.call__body-btn').on('click' , function(e){
+    Form()
+    let check = false
+    if ($('#check').prop('checked')){
+        check = true
+        $('#check').next('span').removeClass('error')
+    }else{
+        check = false
+        $('#check').next('span').addClass('error')
+    }
+    console.log(check)
+    $('.text').each(function(e){
+        console.log($(this))
+        if ($(this).val().length == 0 || !check){
+
+        }else{
+            $('.call__body').addClass('none')
+            $('.modalpo__body').removeClass('none')
+        }
+    })
+})
+// $('.modal__any-body-btn').each(function(el){
+//     $(this).on('click' , function(e){
+//         Form()
+//         let check = false
+//         console.log($(this).prev().children('.custom-checkbox').children('input[type=checkbox]'))
+//         if ($(this).parent().children('.checkbox').children('.custom-checkbox').children('input[type=checkbox]').prop('checked')){
+//             check = true
+//             $(this).parent().children('.checkbox').children('.custom-checkbox').children('input[type=checkbox]').removeClass('error')
+//         }else{
+//             check = false
+//             $(this).parent().children('.checkbox').children('.custom-checkbox').children('input[type=checkbox]').addClass('error')
+//         }
+//         $(this).parent().children('.modal__any-body-form-item').children('.text').each(function(e){
+//             if ($(this).val().length == 0 || !check){
+    
+//             }else{
+//                 $('.modal__any').remove('active')
+//             }
+//         })
+//     })
+// })
+$('.modal__any-body').on('click', function(e){
+    if($('.modal__any-body-close').is(e.target) || $('.modal__any-body-close svg').is(e.target) || $('.modal__any-body-close svg path').is(e.target)){
+        $('.modal__any').removeClass('active')
+        $('body').removeClass('hidden')
+    }
+})
+$('.modalpo__body').on('click', function(e){
+    if ($('.modalpo__body-btn').is(e.target)){
+        window.location.href = 'main.html'
+    }else if($('.call__body-close').is(e.target) || $('.modalpo__body-close svg').is(e.target) || $('.modalpo__body-close svg path').is(e.target)){
+        $('.call').removeClass('active')
+        $('body').removeClass('hidden')
+    }
+})
+$('.call__body').on('click', function(e){
+    if($('.call__body-close').is(e.target) || $('.call__body-close svg').is(e.target) || $('.call__body-close svg path').is(e.target)){
+        $('.call').removeClass('active')
+        $('body').removeClass('hidden')
+    }
+})
+
+$('.prod__btn').on('click', function(e){
+    $('.product').addClass('active')
+    $('body').addClass('hidden')
+})
+$('.product__body').on('click', function(e){
+    if($('.product__body-close').is(e.target) || $('.product__body-close svg').is(e.target) || $('.product__body-close svg path').is(e.target)){
+        $('.product').removeClass('active')
+        $('body').removeClass('hidden')
+    }
+})
 
 
-
-
-
+$('.any__btn').each(function(e){
+    $(this).on('click', function(el){
+        let num = $(this).attr('data-num')
+        $('.modal__any').each(function(element){
+            if($(this).attr('data-type') == num){
+                $(this).addClass('active')
+                $('body').addClass('hidden')
+            }
+        })
+    })
+})
 
 
 var splide = new Splide( '#splide', {
